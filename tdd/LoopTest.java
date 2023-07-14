@@ -2,6 +2,7 @@ package tdd;
 
 import java.util.Scanner;
 
+<<<<<<< HEAD
 //public class LoopTest {
 //    public static void main(String[] args) {
 //        int count = 4;
@@ -17,6 +18,23 @@ import java.util.Scanner;
 //        }
 //    }
 //}
+=======
+public class LoopTest {
+    public static void main(String[] args) {
+        int count = 4;
+        while (count < 9) {
+            int count1 = 8;
+            while (count1 < 9) {
+                System.out.print(4);
+                System.out.println();
+                System.out.print(8);
+                count1++;
+            }
+            count++;
+        }
+    }
+}
+>>>>>>> 1e9a62c (IntelliJ COMMIT)
 //        public class LoopTest {
 //            public static void main(String[] args) {
 //                int rows = 1;

@@ -52,10 +52,10 @@ public class MayaBridggs {
         collect.close();
     }
 
-    public static int askQuestion(String question, Scanner scan) {
+    public static int askQuestion(String question, Scanner collect) {
         System.out.println(question);
         System.out.print("A or B: ");
-        String response = scan.nextLine().toUpperCase();
+        String response = collect.nextLine().toUpperCase();
         return (response.equals("A")) ? 1 : 2;
     }
 

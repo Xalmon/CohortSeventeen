@@ -1,6 +1,6 @@
 package tdd;
 
-public class LoopTest {
+public class LoopTest1 {
     public static void main(String[] args) {
         int count = 4;
         while (count < 9) {

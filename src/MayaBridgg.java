@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MayaBridgg {
+public class MayaBridggs {
     public static void main(String[] args) {
         Scanner collect = new Scanner(System.in);
                int extrovertCount = 0;
@@ -52,10 +52,10 @@ public class MayaBridgg {
         collect.close();
     }
 
-    public static int askQuestion(String question, Scanner collect) {
+    public static int askQuestion(String question, Scanner scan) {
         System.out.println(question);
         System.out.print("A or B: ");
-        String response = collect.nextLine().toUpperCase();
+        String response = scan.nextLine().toUpperCase();
         return (response.equals("A")) ? 1 : 2;
     }
 

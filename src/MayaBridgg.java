@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MayaBridggs {
+public class MayaBridgg {
     public static void main(String[] args) {
         Scanner collect = new Scanner(System.in);
                int extrovertCount = 0;

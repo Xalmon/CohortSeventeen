@@ -6,9 +6,9 @@ public class lite {
 
         double count = 0;
         double sum = 0;
-        double average = 0;
 
-        while (count > 10){
+
+        while (count < 10){
             System.out.print("Enter a number: ");
             double number = lord.nextInt();
 
@@ -18,3 +18,4 @@ public class lite {
         System.out.println(sum);
     }
 }
+

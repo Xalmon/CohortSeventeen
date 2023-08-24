@@ -1,18 +1,20 @@
-//package tdd;
-//
-//public class factorialCalculator {
-//
-//    public int factorialCalculator(int factorial){
-//        boolean factorial = factorial < 0;
-//        if (factorial<0) terminate();
-//        if (factorial = factorial == 0 || factorial == 1);
-//        return 0;
-//    }
-//    private  void  terminate(){
-//        System.out.println("Invalid input, number cannot be nagative.");
-//        System.exit(1);
-//    }
-//
-//    public int calculateFactorial(int factorial) {
-//    }
-//}
+package tdd;
+
+public class factorialCalculator {
+
+    public int calculateFactorial(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Invalid input, number cannot be negative.");
+        }
+
+        if (number == 0 || number == 1) {
+            return 1;
+        }
+
+        int factorial = 1;
+        for (int i = 2; i <= number; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+}

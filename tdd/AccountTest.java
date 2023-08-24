@@ -11,9 +11,7 @@ public class AccountTest {
         Account BabaAccount = new Account();
         int currentBalance = BabaAccount.getBalance();
         assertEquals(0, currentBalance);
-        //when
         BabaAccount.deposit(5000);
-        //check
         currentBalance = BabaAccount.getBalance();
         assertEquals(5000, currentBalance);
 
@@ -25,9 +23,7 @@ public class AccountTest {
         BabaAccount.deposit(8000);
         int currentBalance = BabaAccount.getBalance();
         assertEquals(8000, currentBalance);
-        //when
         BabaAccount.deposit(2000);
-        //check
         int newBalance = BabaAccount.getBalance();
         assertEquals(10000, newBalance);
     }
@@ -39,9 +35,7 @@ public class AccountTest {
         BabaAccount.deposit(1000);
         int currentBalance = BabaAccount.getBalance();
         assertEquals(1000, currentBalance);
-        //when
         BabaAccount.deposit(-2000);
-        //check
         int newBalance = BabaAccount.getBalance();
         assertEquals( 1000, newBalance);
     }
@@ -51,7 +45,6 @@ public class AccountTest {
         BabaAccount.deposit(5000);
         int currentBalance = BabaAccount.getBalance();
         assertEquals(5000, currentBalance);
-        //when
         BabaAccount.withdraw( 2000);
         //check
         int newBalance = BabaAccount.getBalance();

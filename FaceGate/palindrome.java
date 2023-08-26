@@ -3,6 +3,7 @@ package FaceGate;
 import java.util.Scanner;
 
 public class palindrome {
+
     public static void main(String[] args) {
         Scanner user_input = new Scanner(System.in);
         String user_input1;

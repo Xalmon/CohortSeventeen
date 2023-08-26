@@ -2,57 +2,31 @@ package JavaTest;
 
 public class myArray {
     private int[] arr;
-<<<<<<< HEAD
-    private int size;
 
     public myArray(int[] arr) {
         this.arr = arr;
-        this.size = arr.length;
     }
 
     public myArray() {
         this.arr = new int[6];
-        this.size = 0;
-=======
-    int size;
-
-
-    public myArray(int[] arr) {
-        this.arr = arr;
-    }
-
-    public myArray() {
-        int[] arr = new int[6];
-        size = 0;
->>>>>>> origin/main
     }
 
     public boolean isEmpty() {
-        return size == 0;
+        return arr.length == 0;
     }
 
     public void add(int i) {
-        if (size < arr.length) {
-            arr[size] = i;
-            size++;
+        if (arr.length < 6) {
+            int[] newArray = new int[arr.length + 1];
+            System.arraycopy(arr, 0, newArray, 0, arr.length);
+            newArray[arr.length] = i;
+            arr = newArray;
         }
     }
 
-    public void swishArray() {
-<<<<<<< HEAD
-    }
-
     public int get(int index) {
-        if (index >= 0 && index < size) {
+        if (index >= 0 && index < arr.length) {
             return arr[index];
-=======
-
-    }
-
-    public int get(int number) {
-        if (number >= 0 && number < size) {
-            return arr[number];
->>>>>>> origin/main
         } else {
             throw new IndexOutOfBoundsException("Index is out of bounds.");
         }
@@ -66,12 +40,11 @@ public class myArray {
         }
     }
 
-<<<<<<< HEAD
     public void subtractFromOdd() {
-        for (int index = 0; index < size; index++) {
-            if (arr[index] % 2 != 0) {
-                arr[index] -= 1;
-                System.out.print(index + " ");
+        for (int number = 0; number < arr.length; number++) {
+            if (arr[number] % 2 != 0) {
+                arr[number] -= 1;
+                System.out.print(number + " ");
             }
         }
         System.out.println();
@@ -79,7 +52,7 @@ public class myArray {
 
     public void collectOddNumbersAndSubtractTwo() {
         System.out.println("Odd numbers:");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
                 System.out.print(arr[i] + " ");
                 arr[i] -= 2;
@@ -90,41 +63,6 @@ public class myArray {
     }
 
     public int[] toArray() {
-        int[] newArray = new int[size];
-        System.arraycopy(arr, 0, newArray, 0, size);
-        return newArray;
+        return arr;
     }
 }
-=======
-//    public void subtractFromOdd() {
-//        for (int number = 0; number < arr.length; number++) {
-//            if (arr[number] % 2 != 0) {
-//                arr[number] -= 1;
-//                System.out.println(number + " ");
-//            }
-//        }
-//    }
-
-        public void collectOddNumbersAndSubtractTwo() {
-            if (arr == null || arr.length == 0) {
-                return;
-            }
-
-            System.out.println("Even numbers:");
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] % 2 != 0) {
-                    System.out.print(arr[i] + " ");
-                    arr[i] -= 2;
-                    System.out.println(arr[i] + " ");
-                }
-            }
-            System.out.println();
-        }
-
-        public int[] toArray() {
-            return arr;
-        }
-    }
-
-
->>>>>>> origin/main

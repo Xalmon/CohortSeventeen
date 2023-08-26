@@ -1,4 +1,4 @@
-package others;
+package OnlineTutorials;
 
 public class ArrayLoops1 {
     public static void main(String[] args) {

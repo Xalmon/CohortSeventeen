@@ -43,7 +43,7 @@ public class Prompt {
     public static void userEntry() {
         String name = validateName();
         if (checkValidname(name)) {
-            System.out.println("Wow, you've got a valid name! Congrats!");
+            System.out.println("valid name! Congrats!");
         } else {
             userEntry();
         }

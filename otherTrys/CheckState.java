@@ -1,8 +1,8 @@
-package others;
+package otherTrys;
+
+import otherTrys.Geopoliticalzone;
 
 import java.util.Scanner;
-
-import static others.Geopoliticalzone.*;
 
 public class CheckState {
     public static void main(String[] args) {

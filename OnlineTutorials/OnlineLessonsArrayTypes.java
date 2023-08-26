@@ -1,8 +1,8 @@
-package others;
+package OnlineTutorials;
 
 import java.util.Arrays;
 
-public class ArrayTypes {
+public class OnlineLessonsArrayTypes {
     public static void main(String[] args) {
 
         int[] singleArray = new int[5];
@@ -22,7 +22,7 @@ public class ArrayTypes {
         String[] stringArray = new String[3];
         stringArray[0] = "Hello";
 
-        ArrayTypes arrayTypes = new ArrayTypes();
+        OnlineLessonsArrayTypes arrayTypes = new OnlineLessonsArrayTypes();
         arrayTypes.printNumbers(1, 2, 3);
 
         int[] array = {3, 1, 4, 1, 5};

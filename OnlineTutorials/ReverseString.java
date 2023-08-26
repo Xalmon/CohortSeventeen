@@ -1,4 +1,4 @@
-package others;
+package OnlineTutorials;
 
 public class ReverseString {
         public static void main(String[] args) {

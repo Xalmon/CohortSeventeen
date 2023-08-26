@@ -1,6 +1,6 @@
-package others;
+package OnlineTutorials;
 
-import static others.ArraySum.reverseArray;
+import static OnlineTutorials.ArraySum.reverseArray;
 
 public class ClassWorkArray {
     public static void main(String args[]) {

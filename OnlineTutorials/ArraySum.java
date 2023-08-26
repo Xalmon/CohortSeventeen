@@ -1,4 +1,4 @@
-package others;
+package OnlineTutorials;
 
 import java.util.Scanner;
 

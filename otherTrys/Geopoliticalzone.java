@@ -1,6 +1,4 @@
-package others;
-
-import java.util.Scanner;
+package otherTrys;
 
 public enum Geopoliticalzone {
     NORTH_WEST("Jigawa, Kaduna, Kano, Katsina, Kebbi, Sokoto, and Zamfara States"),

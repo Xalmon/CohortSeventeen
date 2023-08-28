@@ -1,9 +1,13 @@
+package tdd;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Account {
+    private String accountNumber;
 
     private static List<Account> accounts = new ArrayList<>();
+
     private String firstName;
     private String lastName;
     private String pin;
@@ -14,14 +18,10 @@ public class Account {
         this.lastName = lastName;
         this.pin = pin;
         balance = 0;
+        this.accountNumber = generateAccountNumber();
         accounts.add(this);
     }
 
-    public Account() {
-        accounts.add(this);
-        balance = 0;
-        pin = "0000";
-    }
 
     public int getBalance() {
         return balance;
@@ -55,20 +55,17 @@ public class Account {
         return accounts;
     }
 
-    public void transfer(int transferAmount, String senderPin, String recipientPin) {
-        boolean amountIsPositive = transferAmount > 0;
-        boolean sufficientFundsInAccount = balance >= transferAmount;
-        boolean correctSenderPin = senderPin.equals(this.pin);
-        boolean correctRecipientPin = recipientPin.equals(this.pin);
-
-        if (amountIsPositive && sufficientFundsInAccount && correctSenderPin && correctRecipientPin) {
-            balance -= transferAmount;
-        }
+    public String getFullName() {
+        return firstName + " " + lastName + " " + getPin();
     }
 
-    public static void generateAccountNumber(int accountCount) {
-        for (int number = 0; number < accountCount; number++) {
-            Account generateAccountNumber = new Account();
-        }
+    public String getGetAccountNumber() {
+        return accountNumber;
+    }
+
+    private static int accountCounter = 0;
+    private String generateAccountNumber() {
+        accountCounter++;
+        return Integer.toString(accountCounter);
     }
 }

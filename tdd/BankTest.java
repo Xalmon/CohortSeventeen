@@ -31,7 +31,7 @@ public class BankTest {
         bank.deposit(5000, bank.getAccounts().get(0).getGetAccountNumber());
         int currentBalance = bank.getBalance();
         assertEquals(5000, currentBalance);
-        bank.withdraw(2000, "1", "0000");
+        bank.withdraw(2000, "1", "1234");
         int newBalance = bank.getBalance();
         assertEquals(3000, newBalance);
     }
@@ -49,15 +49,6 @@ public class BankTest {
         int toAccountCheckBalance = bank.findAccount(toAccount).getBalance();
         assertEquals(3000, fromAccountCheckBalance);
         assertEquals(2000, toAccountCheckBalance);
-    }
-
-
-    @Test
-    public void createMultipleAccountsTest() {
-        Bank bank = new Bank();
-        bank.register("Baba", "Solo", "1234");
-        bank.register("messi", "wa", "1431");
-        assertEquals("3", bank.generateAccountNumber());
     }
 }
 

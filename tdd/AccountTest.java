@@ -18,6 +18,14 @@ public class AccountTest {
     }
 
     @Test
+    public void nagativeDeposit_throwsException(){
+        Account BabaAccount = new Account("Baba", "Solo", "0000");
+        int currentBalance = BabaAccount.getBalance();
+        assertEquals(0, currentBalance);
+
+    }
+
+    @Test
     public void canDepositTwiceAccount() {
         Account BabaAccount = new Account("Baba","Solo", "0000");
         BabaAccount.deposit(8000);

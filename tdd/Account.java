@@ -5,13 +5,11 @@ import java.util.List;
 
 public class Account {
     private String accountNumber;
-
-    private static List<Account> accounts = new ArrayList<>();
-
     private String firstName;
     private String lastName;
     private String pin;
     private int balance;
+    private static List<Account> accounts = new ArrayList<>();
 
     public Account(String firstName, String lastName, String pin) {
         this.firstName = firstName;
